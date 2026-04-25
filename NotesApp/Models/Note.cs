@@ -1,7 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 namespace NotesApp.Models;
+
 public class Note {
     public int Id { get; set; }
+    public string Title { get; set; }
+    public string Content { get; set; }
+    public int Priority { get; set; }
     public int CategoryId { get; set; }
     public Category Category { get; set; } = null!;
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
