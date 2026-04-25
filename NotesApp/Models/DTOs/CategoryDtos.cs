@@ -33,10 +33,9 @@ public class UpdateCategoryDto {
 
 public class CategoryResponseDto {
     public int Id { get; set; }
-    public int CategoryId { get; set; }
-    public Category Category { get; set; } = null!;
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
-    public bool IsPinned { get; set; } = false;
-    public bool IsArchived { get; set; } = false;
+    public string Name { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public string Color { get; set; } = string.Empty;
+    public DateTime CreatedAt { get; set; }
+    public int NotesCount { get; set; }
 }
